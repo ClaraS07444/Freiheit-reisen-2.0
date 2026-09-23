@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Freiheit Reisen organisiert nationale und internationale Tagesausflüge, Gruppenreisen und besondere Reiseerlebnisse ab Aachen.">
+  <meta name="theme-color" content="#082D63">
+  <meta property="og:title" content="Freiheit Reisen | Tagesausflüge und Gruppenreisen">
+  <meta property="og:description" content="Nationale und internationale Reisen, persönliche Planung und besondere Reiseerlebnisse ab Aachen.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://freiheit-reisen.eu/">
+  <meta property="og:image" content="https://freiheit-reisen.eu/assets/fr-banner.png">
+  <link rel="canonical" href="https://freiheit-reisen.eu/">
+  <link rel="stylesheet" href="styles.css">
+  <title>Freiheit Reisen | Tagesausflüge und Gruppenreisen</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Zum Hauptinhalt springen</a>
+
+  <header class="hero-banner" aria-label="Freiheit Reisen">
+    <picture>
+      <source media="(max-width: 639px)" srcset="assets/fr-banner.png">
+      <img
+        class="hero-banner__image"
+        src="assets/fr-banner.png"
+        alt="Freiheit Reisen Reisebus an einer mediterranen Küste mit dem Slogan Die Freiheit zu reisen, mit uns immer frei."
+        width="2048"
+        height="690"
+        fetchpriority="high"
+      >
+    </picture>
+  </header>
+
+  <nav class="site-nav" aria-label="Hauptnavigation" data-site-nav>
+    <div class="container site-nav__inner">
+      <a class="brand" href="#top" aria-label="Freiheit Reisen Startseite">
+        <img
+          src="assets/freiheit-Reisen%20Logo.png"
+          alt=""
+          width="56"
+          height="56"
+        >
+        <span>Freiheit Reisen</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        aria-label="Navigation öffnen"
+        data-nav-toggle
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-panel" id="primary-navigation" data-nav-panel>
+        <a href="#aktuelle-reisen">Aktuelle Reisen</a>
+        <a href="#reiseanfrage">Reiseanfrage</a>
+        <a href="#reiseziele">Reiseziele</a>
+        <a href="#ueber-uns">Über uns</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section class="section section--intro" id="top">
+      <div class="container container--narrow section-heading" data-reveal>
+        <p class="eyebrow">Gemeinsam unterwegs</p>
+        <h1>Nationale und internationale Reisen mit persönlicher Planung</h1>
+        <div class="accent-line" aria-hidden="true"></div>
+        <p class="lead">
+          Freiheit Reisen verbindet ausgewählte Reiseziele mit klarer Organisation,
+          persönlichem Kontakt und besonderen Erlebnissen für Einzelreisende und Gruppen.
+        </p>
+        <div class="button-row">
+          <a class="button button--primary button--large" href="#aktuelle-reisen">
+            Aktuelle Reise entdecken
+          </a>
+          <a class="button button--outline button--large" href="#reiseanfrage">
+            Reisewunsch mitteilen
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="busgroessen-title">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Passend zur Gruppe</p>
+          <h2 id="busgroessen-title">Reisen für kleine und große Gruppen</h2>
+          <div class="accent-line" aria-hidden="true"></div>
+          <p>Je nach Gruppengröße kann ein passendes Fahrzeug für die geplante Reise organisiert werden.</p>
+        </div>
+
+        <div class="card-grid card-grid--three">
+          <article class="card vehicle-card" data-reveal>
+            <div class="card__media">
+              <img
+                src="assets/fr-sprinter.png"
+                alt="20-Sitzer Kleinbus in einer Berglandschaft"
+                width="1536"
+                height="1024"
+                loading="lazy"
+              >
+            </div>
+            <div class="card__body">
+              <span class="badge badge--info">Kleingruppen</span>
+              <h3>20-Sitzer</h3>
+              <p>Für kleinere Gruppen, individuelle Reiseideen und persönliche Ausflüge.</p>
+            </div>
+          </article>
+
+          <article class="card vehicle-card" data-reveal>
+            <div class="card__media">
+              <img
+                src="assets/fr-reisebus.png"
+                alt="Reisebus auf einer sonnigen Küstenstraße"
+                width="1536"
+                height="1024"
+                loading="lazy"
+              >
+            </div>
+            <div class="card__body">
+              <span class="badge badge--info">Tages- und Gruppenreisen</span>
+              <h3>Reisebus</h3>
+              <p>Für komfortable Tagesausflüge, Städtereisen und klassische Gruppenfahrten.</p>
+            </div>
+          </article>
+
+          <article class="card vehicle-card" data-reveal>
+            <div class="card__media">
+              <img
+                src="assets/fr-doppeldecker.png"
+                alt="Doppeldecker-Reisebus in einer verschneiten Berglandschaft"
+                width="1536"
+                height="1024"
+                loading="lazy"
+              >
+            </div>
+            <div class="card__body">
+              <span class="badge badge--info">Große Gruppen</span>
+              <h3>Doppeldecker</h3>
+              <p>Für größere Gemeinschaften, Vereine und besondere Reisekonzepte.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section section--soft"
+      id="aktuelle-reisen"
+      aria-labelledby="aktuelle-reisen-title"
+    >
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Buchbare Angebote</p>
+          <h2 id="aktuelle-reisen-title">Aktuelle Reisen</h2>
+          <div class="accent-line" aria-hidden="true"></div>
+          <p>Konkrete Reiseangebote mit Termin, Preis und übersichtlichem Ablauf.</p>
+        </div>
+
+        <div class="featured-trip card" data-reveal>
+          <div class="featured-trip__media">
+            <img
+              src="assets/fr-paris-reisewerbung.png"
+              alt="Werbegrafik zur Paris-Tagesfahrt am 20. und 21. November 2026"
+              width="1254"
+              height="1254"
+              loading="lazy"
+            >
+          </div>
+
+          <div class="featured-trip__content">
+            <span class="badge badge--available">Anfragbar</span>
+            <p class="trip-kicker">Stadt der Lichter</p>
+            <h3>Paris Tagesfahrt</h3>
+
+            <p class="trip-date">
+              <time datetime="2026-11-20">20.11.2026</time>
+              <span aria-hidden="true">→</span>
+              <time datetime="2026-11-21">21.11.2026</time>
+            </p>
+
+            <div class="trip-price">
+              <strong>95&nbsp;€</strong>
+              <span>pro Person</span>
+            </div>
+
+            <ul class="trip-facts" aria-label="Reiseablauf Paris">
+              <li><strong>Abfahrt:</strong> 02:30 Uhr, Hüls Aachen</li>
+              <li><strong>Pause:</strong> ca. 07:00 Uhr, 45 Minuten</li>
+              <li><strong>Ankunft:</strong> ca. 09:30 Uhr in Paris</li>
+              <li><strong>Aufenthalt:</strong> Arc de Triomphe / Champs-Élysées</li>
+              <li><strong>Rückfahrt:</strong> 21:00 Uhr</li>
+            </ul>
+
+            <p class="availability-note">Begrenzte Sitzplätze verfügbar.</p>
+
+            <div class="button-row button-row--left">
+              <a
+                class="button button--primary button--large js-trip-request"
+                href="#reiseanfrage"
+                data-trip="Paris Tagesfahrt – 20.11.2026 bis 21.11.2026"
+              >
+                Paris jetzt anfragen
+              </a>
+              <button
+                class="button button--outline"
+                type="button"
+                data-dialog-open="paris-details"
+              >
+                Ablauf anzeigen
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reiseanfrage" aria-labelledby="reiseanfrage-title">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Unverbindliche Anfrage</p>
+          <h2 id="reiseanfrage-title">Interesse an einer Reise?</h2>
+          <div class="accent-line" aria-hidden="true"></div>
+          <p>
+            Tragen Sie eine angebotene Reise oder einfach Ihr eigenes Wunschziel ein.
+            Wir melden uns persönlich bei Ihnen zurück.
+          </p>
+        </div>
+
+        <div class="form-shell" data-reveal>
+          <form
+            class="request-form"
+            action="https://formsubmit.co/freiheit.reisen@icloud.com"
+            method="POST"
+            data-request-form
+          >
+            <input type="hidden" name="_subject" value="Neue Reiseanfrage über freiheit-reisen.eu">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input
+              class="honeypot"
+              type="text"
+              name="_honey"
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
+            >
+
+            <div class="form-grid">
+              <div class="form-field form-field--full">
+                <label for="trip-interest">
+                  Welche Reise interessiert Sie? <span aria-hidden="true">*</span>
+                </label>
+                <input
+                  id="trip-interest"
+                  name="Reise"
+                  type="text"
+                  placeholder="z. B. Paris, Amsterdam oder ein eigenes Wunschziel"
+                  autocomplete="off"
+                  required
+                >
+                <p class="field-error" id="trip-interest-error" aria-live="polite"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="full-name">Vor- und Nachname <span aria-hidden="true">*</span></label>
+                <input id="full-name" name="Name" type="text" autocomplete="name" required>
+                <p class="field-error" id="full-name-error" aria-live="polite"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="email">E-Mail-Adresse <span aria-hidden="true">*</span></label>
+                <input id="email" name="E-Mail" type="email" autocomplete="email" required>
+                <p class="field-error" id="email-error" aria-live="polite"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="phone">Telefonnummer <span class="label-note">optional</span></label>
+                <input id="phone" name="Telefon" type="tel" autocomplete="tel">
+                <p class="field-hint">Nur angeben, wenn Sie einen Rückruf wünschen.</p>
+              </div>
+
+              <div class="form-field">
+                <label for="people">Anzahl der Personen <span aria-hidden="true">*</span></label>
+                <input id="people" name="Personen" type="number" min="1" step="1" value="1" required>
+                <p class="field-error" id="people-error" aria-live="polite"></p>
+              </div>
+
+              <div class="form-field form-field--full">
+                <label for="message">Nachricht oder Wünsche <span class="label-note">optional</span></label>
+                <textarea
+                  id="message"
+                  name="Nachricht"
+                  rows="6"
+                  placeholder="Weitere Fragen, besondere Wünsche oder Informationen zu Ihrer Gruppe"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="privacy-check">
+              <input
+                id="privacy"
+                name="Datenschutz-Zustimmung"
+                type="checkbox"
+                value="erteilt"
+                required
+              >
+              <label for="privacy">
+                Ich habe die
+                <button
+                  class="text-button"
+                  type="button"
+                  data-dialog-open="privacy-dialog"
+                >
+                  Datenschutzerklärung
+                </button>
+                gelesen und stimme zu, dass meine Angaben zur Bearbeitung meiner Anfrage
+                verarbeitet werden. <span aria-hidden="true">*</span>
+              </label>
+            </div>
+
+            <p class="field-error" id="privacy-error" aria-live="polite"></p>
+            <p class="form-note">* Pflichtfelder. Die Anfrage ist noch keine verbindliche Buchung.</p>
+
+            <div class="form-actions">
+              <button
+                class="button button--primary button--large"
+                type="submit"
+                data-submit-button
+              >
+                Reiseanfrage senden
+              </button>
+              <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="section section--soft"
+      id="reiseziele"
+      aria-labelledby="reiseziele-title"
+    >
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Inspiration</p>
+          <h2 id="reiseziele-title">Beliebte Reiseziele</h2>
+          <div class="accent-line" aria-hidden="true"></div>
+          <p>
+            Noch ohne festen Termin, aber voller Möglichkeiten. Teilen Sie uns mit,
+            welches Ziel Sie besonders interessiert.
+          </p>
+        </div>
+
+        <div class="card-grid card-grid--four">
+          <article class="card inspiration-card" data-reveal>
+            <div class="card__media card__media--portrait">
+              <img
+                src="assets/fr-paris.png"
+                alt="Reiseinspiration Paris mit Eiffelturm und Pariser Stadtmotiven"
+                width="1122"
+                height="1402"
+                loading="lazy"
+              >
+            </div>
+            <div class="card__body">
+              <span class="badge badge--planning">In Planung</span>
+              <h3>Paris</h3>
+              <p>Stadtlichter, Seine und besondere Momente in der französischen Hauptstadt.</p>
+              <a
+                class="text-link js-trip-request"
+                href="#reiseanfrage"
+                data-trip="Interesse an Paris"
+              >
+                Interesse mitteilen <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="card inspiration-card" data-reveal>
+            <div class="card__media card__media--portrait">
+              <img
+                src="assets/fr-amsterdam.png"
+                alt="Reiseinspiration Amsterdam mit Grachten, Brücken und Booten"
+                width="1122"
+                height="1402"
+                loading="lazy"
+              >
+            </div>
+            <div class="card__body">
+              <span class="badge badge--planning">In Planung</span>
+              <h3>Amsterdam</h3>
+              <p>Grachten, Architektur und niederländische Lebensfreude an einem erlebnisreichen Tag.</p>
+              <a
+                class="text-link js-trip-request"
+                href="#reiseanfrage"
+                data-trip="Interesse an Amsterdam"
+              >
+                Interesse mitteilen <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="card inspiration-card" data-reveal>
+            <div class="card__media card__media--portrait">
+              <img
+                src="assets/fr-disneylanp.png"
+                alt="Reiseinspiration Disneyland Paris mit märchenhaftem Schlossmotiv"
+                width="1122"
+                height="1402"
+                loading="lazy"
+              >
+            </div>
+            <div class="card__body">
+              <span class="badge badge--planning">In Planung</span>
+              <h3>Disneyland Paris</h3>
+              <p>Ein möglicher Tagesausflug voller märchenhafter Eindrücke für Familien und Freizeitparkfans.</p>
+              <a
+                class="text-link js-trip-request"
+                href="#reiseanfrage"
+                data-trip="Interesse an Disneyland Paris"
+              >
+                Interesse mitteilen <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="card inspiration-card" data-reveal>
+            <div class="card__media card__media--portrait">
+              <img
+                src="assets/fr-lichterfest-amsterdam.png"
+                alt="Lichterfest Amsterdam mit leuchtenden Kunstinstallationen an den Grachten"
+                width="1122"
+                height="1402"
+                loading="lazy"
+              >
+            </div>
+            <div class="card__body">
+              <span class="badge badge--planning">In Planung</span>
+              <h3>Lichterfest Amsterdam</h3>
+              <p>Leuchtende Kunstwerke, nächtliche Grachten und eine mögliche stimmungsvolle Bootsfahrt.</p>
+              <a
+                class="text-link js-trip-request"
+                href="#reiseanfrage"
+                data-trip="Interesse am Lichterfest Amsterdam"
+              >
+                Interesse mitteilen <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="card inspiration-card" data-reveal>
+            <div class="card__media card__media--portrait">
+              <img
+                src="assets/fr-spanienwf.png"
+                alt="Reiseinspiration Calella de Mar mit Strand, Meer und Leuchtturm"
+                width="1122"
+                height="1402"
+                loading="lazy"
+              >
+            </div>
+            <div class="card__body">
+              <span class="badge badge--planning">In Planung</span>
+              <h3>Calella de Mar</h3>
+              <p>Sonne, Meer und eine Woche Freiheit an der spanischen Küste.</p>
+              <a
+                class="text-link js-trip-request"
+                href="#reiseanfrage"
+                data-trip="Interesse an Calella de Mar"
+              >
+                Interesse mitteilen <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ueber-uns" aria-labelledby="ueber-uns-title">
+      <div class="container about-layout">
+        <div class="about-layout__content" data-reveal>
+          <p class="eyebrow">Über Freiheit Reisen</p>
+          <h2 id="ueber-uns-title">Reisen mit Leidenschaft. Gemeinsam erleben.</h2>
+          <div class="accent-line accent-line--left" aria-hidden="true"></div>
+          <p class="lead">Reisen ist mehr als nur von A nach B zu kommen.</p>
+          <p>
+            Freiheit Reisen ist eine junge Reisevermittlung mit Leidenschaft für Planung,
+            Organisation und besondere Reiseerlebnisse. Unser Ziel ist es, die Freiheit des
+            Reisens zugänglich zu machen und Menschen zu ausgewählten Reisezielen in Deutschland
+            und Europa zu begleiten.
+          </p>
+          <p>
+            Ob Einzelperson, Freundeskreis, Verein oder geschlossene Gruppe: Reisen sollen
+            einfach, nachvollziehbar und erlebnisreich gestaltet sein.
+          </p>
+          <a class="button button--secondary" href="#reiseanfrage">Reisewunsch mitteilen</a>
+        </div>
+
+        <div class="about-layout__media" data-reveal>
+          <img
+            src="assets/fr-reisebus.png"
+            alt="Reisebus auf einer sonnigen Küstenstraße als Symbol für Freiheit Reisen"
+            width="1536"
+            height="1024"
+            loading="lazy"
+          >
+        </div>
+      </div>
+
+      <div class="container value-grid">
+        <article class="value-card" data-reveal>
+          <span class="value-card__number">01</span>
+          <h3>Persönlich</h3>
+          <p>Direkter, verständlicher Kontakt und individuelle Reiseideen.</p>
+        </article>
+
+        <article class="value-card" data-reveal>
+          <span class="value-card__number">02</span>
+          <h3>Sorgfältig</h3>
+          <p>Klare Planung, nachvollziehbare Informationen und strukturierte Abläufe.</p>
+        </article>
+
+        <article class="value-card" data-reveal>
+          <span class="value-card__number">03</span>
+          <h3>Gemeinschaftlich</h3>
+          <p>Reisen für Einzelpersonen, Freundeskreise, Vereine und Gruppen.</p>
+        </article>
+
+        <article class="value-card" data-reveal>
+          <span class="value-card__number">04</span>
+          <h3>Europaweit</h3>
+          <p>Nationale und internationale Ziele, passend zur jeweiligen Reiseart.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="kontakt" aria-labelledby="kontakt-title">
+      <div class="container contact-layout">
+        <div>
+          <p class="eyebrow eyebrow--light">Kontakt</p>
+          <h2 id="kontakt-title">Wohin möchten Sie reisen?</h2>
+          <p>Nutzen Sie das Reiseanfrageformular oder schreiben Sie uns direkt per E-Mail.</p>
+        </div>
+
+        <div class="contact-card">
+          <div>
+            <span>E-Mail</span>
+            <a href="mailto:freiheit.reisen@icloud.com">freiheit.reisen@icloud.com</a>
+          </div>
+          <div>
+            <span>Facebook</span>
+            <strong>Freiheit Reisen</strong>
+          </div>
+          <div>
+            <span>Sitz</span>
+            <strong>Aachen</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <img
+          src="assets/freiheit-Reisen%20Logo.png"
+          alt=""
+          width="50"
+          height="50"
+        >
+        <div>
+          <strong>Freiheit Reisen</strong>
+          <span>Die Freiheit zu reisen, mit uns immer frei.</span>
+        </div>
+      </div>
+
+      <div class="site-footer__links">
+        <button class="footer-link" type="button" data-dialog-open="imprint-dialog">
+          Impressum
+        </button>
+        <button class="footer-link" type="button" data-dialog-open="privacy-dialog">
+          Datenschutz
+        </button>
+        <a href="#top">Nach oben</a>
+      </div>
+    </div>
+
+    <div class="container site-footer__bottom">
+      <span>© <span data-current-year>2026</span> Freiheit Reisen</span>
+      <span>freiheit-reisen.eu</span>
+    </div>
+  </footer>
+
+  <button
+    class="back-to-top"
+    type="button"
+    aria-label="Nach oben scrollen"
+    data-back-to-top
+  >
+    <span aria-hidden="true">↑</span>
+  </button>
+
+  <dialog class="dialog" id="paris-details" aria-labelledby="paris-details-title">
+    <div class="dialog__surface">
+      <button
+        class="dialog__close"
+        type="button"
+        aria-label="Dialog schließen"
+        data-dialog-close
+      >
+        ×
+      </button>
+
+      <p class="eyebrow">Reiseablauf</p>
+      <h2 id="paris-details-title">Paris Tagesfahrt</h2>
+
+      <dl class="detail-list">
+        <div><dt>Datum</dt><dd>20.11.2026 bis 21.11.2026</dd></div>
+        <div><dt>Abfahrt</dt><dd>02:30 Uhr, Hüls Aachen</dd></div>
+        <div><dt>Pause</dt><dd>ca. 07:00 Uhr, 45 Minuten Frühstück und Toilette</dd></div>
+        <div><dt>Ankunft</dt><dd>ca. 09:30 Uhr in Paris</dd></div>
+        <div><dt>Aufenthalt</dt><dd>Freier Aufenthalt im Bereich Arc de Triomphe / Champs-Élysées</dd></div>
+        <div><dt>Rückfahrt</dt><dd>21:00 Uhr</dd></div>
+        <div><dt>Preis</dt><dd>95 € pro Person</dd></div>
+      </dl>
+
+      <p class="dialog__note">Die Reiseanfrage ist noch keine verbindliche Buchung.</p>
+
+      <a
+        class="button button--primary js-trip-request"
+        href="#reiseanfrage"
+        data-trip="Paris Tagesfahrt – 20.11.2026 bis 21.11.2026"
+        data-dialog-close
+      >
+        Paris anfragen
+      </a>
+    </div>
+  </dialog>
+
+  <dialog class="dialog" id="imprint-dialog" aria-labelledby="imprint-title">
+    <div class="dialog__surface dialog__surface--legal">
+      <button
+        class="dialog__close"
+        type="button"
+        aria-label="Dialog schließen"
+        data-dialog-close
+      >
+        ×
+      </button>
+
+      <h2 id="imprint-title">Impressum</h2>
+
+      <div class="legal-notice">
+        <strong>Vor Veröffentlichung vervollständigen und rechtlich prüfen.</strong>
+      </div>
+
+      <h3>Angaben gemäß § 5 DDG</h3>
+      <p>
+        Freiheit Reisen<br>
+        Clara Schumann<br>
+        [vollständige ladungsfähige Anschrift ergänzen]<br>
+        Deutschland
+      </p>
+
+      <h3>Kontakt</h3>
+      <p>
+        E-Mail:
+        <a href="mailto:freiheit.reisen@icloud.com">freiheit.reisen@icloud.com</a>
+      </p>
+
+      <p>
+        [Weitere erforderliche Angaben wie Rechtsform, Register oder USt-ID ergänzen,
+        soweit zutreffend.]
+      </p>
+    </div>
+  </dialog>
+
+  <dialog class="dialog" id="privacy-dialog" aria-labelledby="privacy-title">
+    <div class="dialog__surface dialog__surface--legal">
+      <button
+        class="dialog__close"
+        type="button"
+        aria-label="Dialog schließen"
+        data-dialog-close
+      >
+        ×
+      </button>
+
+      <h2 id="privacy-title">Datenschutzerklärung</h2>
+
+      <div class="legal-notice">
+        <strong>
+          Vor Veröffentlichung an Cloudflare Pages, FormSubmit und alle tatsächlich
+          eingesetzten Dienste anpassen und rechtlich prüfen.
+        </strong>
+      </div>
+
+      <h3>Verantwortliche Stelle</h3>
+      <p>
+        Clara Schumann, Freiheit Reisen<br>
+        [vollständige Anschrift ergänzen]<br>
+        E-Mail:
+        <a href="mailto:freiheit.reisen@icloud.com">freiheit.reisen@icloud.com</a>
+      </p>
+
+      <h3>Reiseanfragen</h3>
+      <p>
+        Beim Absenden einer Reiseanfrage werden die eingegebenen Daten zur Bearbeitung
+        der Anfrage verarbeitet und über den eingesetzten Formulardienst übermittelt.
+        Ergänzen Sie hier vor dem öffentlichen Launch insbesondere Rechtsgrundlage,
+        Empfänger, Speicherdauer, Drittlandtransfer und Betroffenenrechte.
+      </p>
+
+      <h3>Hosting</h3>
+      <p>
+        Ergänzen Sie die erforderlichen Informationen zum Hosting über Cloudflare Pages
+        sowie zur Verarbeitung von Server-Protokolldaten.
+      </p>
+    </div>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
