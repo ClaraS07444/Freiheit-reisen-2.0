@@ -178,16 +178,19 @@ button {
 }
 
 .hero-banner {
+  display: block;
   width: 100%;
   overflow: hidden;
   background: #ffffff;
 }
 
 .hero-banner picture {
+  display: block;
   width: 100%;
 }
 
 .hero-banner__image {
+  display: block;
   width: 100%;
   height: auto;
   max-height: none;
@@ -877,16 +880,19 @@ button {
 
 .contact-card {
   display: grid;
-  gap: var(--space-4);
+  width: 100%;
+  min-width: 0;
+  gap: var(--space-5);
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: var(--radius-lg);
   background: rgba(255, 255, 255, 0.08);
-  padding: var(--space-5);
+  padding: clamp(1.5rem, 3vw, 2rem);
   backdrop-filter: blur(10px);
 }
 
 .contact-card div {
   display: grid;
+  min-width: 0;
   gap: var(--space-1);
 }
 
@@ -900,8 +906,12 @@ button {
 
 .contact-card a,
 .contact-card strong {
+  max-width: 100%;
   color: #ffffff;
-  font-size: 1.02rem;
+  font-size: clamp(0.92rem, 1.5vw, 1.02rem);
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .site-footer {
@@ -1129,7 +1139,7 @@ button {
   }
 
   .contact-card {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
   }
 
   .site-footer__inner {
@@ -1234,9 +1244,25 @@ button {
 }
 
 @media (max-width: 39.9375rem) {
+  .hero-banner,
+  .hero-banner picture {
+    display: block;
+    width: 100%;
+    min-height: 1px;
+  }
+
   .hero-banner__image {
-    min-height: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 1px;
+    visibility: visible;
+    opacity: 1;
     object-fit: contain;
+  }
+
+  .contact-card {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .brand span {
