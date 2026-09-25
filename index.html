@@ -35,7 +35,7 @@
     <div class="container site-nav__inner">
       <a class="brand" href="#top" aria-label="Freiheit Reisen Startseite">
         <img
-          src="freiheit-ReisenLogo.png"
+          src="freiheit-Reisen%20Logo.png"
           alt=""
           width="56"
           height="56"
@@ -100,7 +100,7 @@
           <article class="card vehicle-card" data-reveal>
             <div class="card__media">
               <img
-                src="fr-sprinter.png"
+                src="assets/fr-sprinter.png"
                 alt="20-Sitzer Kleinbus in einer Berglandschaft"
                 width="1536"
                 height="1024"
@@ -314,13 +314,14 @@
               >
               <label for="privacy">
                 Ich habe die
-                <button
+                <a
                   class="text-button"
-                  type="button"
-                  data-dialog-open="privacy-dialog"
+                  href="datenschutz.html"
+                  target="_blank"
+                  rel="noopener"
                 >
                   Datenschutzerklärung
-                </button>
+                </a>
                 gelesen und stimme zu, dass meine Angaben zur Bearbeitung meiner Anfrage
                 verarbeitet werden. <span aria-hidden="true">*</span>
               </label>
@@ -587,9 +588,9 @@
         <button class="footer-link" type="button" data-dialog-open="imprint-dialog">
           Impressum
         </button>
-        <button class="footer-link" type="button" data-dialog-open="privacy-dialog">
+        <a class="footer-link" href="datenschutz.html">
           Datenschutz
-        </button>
+        </a>
         <a href="#top">Nach oben</a>
       </div>
     </div>
@@ -683,53 +684,6 @@
       </p>
     </div>
   </dialog>
-
-  <dialog class="dialog" id="privacy-dialog" aria-labelledby="privacy-title">
-    <div class="dialog__surface dialog__surface--legal">
-      <button
-        class="dialog__close"
-        type="button"
-        aria-label="Dialog schließen"
-        data-dialog-close
-      >
-        ×
-      </button>
-
-      <h2 id="privacy-title">Datenschutzerklärung</h2>
-
-      <div class="legal-notice">
-        <strong>
-          Vor Veröffentlichung an Cloudflare Pages, FormSubmit und alle tatsächlich
-          eingesetzten Dienste anpassen und rechtlich prüfen.
-        </strong>
-      </div>
-
-      <h3>Verantwortliche Stelle</h3>
-      <p>
-        Clara Schumann, Freiheit Reisen<br>
-        [vollständige Anschrift ergänzen]<br>
-        E-Mail:
-        <a href="mailto:freiheit.reisen@icloud.com">freiheit.reisen@icloud.com</a>
-      </p>
-
-      <h3>Reiseanfragen</h3>
-      <p>
-        Beim Absenden einer Reiseanfrage werden die eingegebenen Daten zur Bearbeitung
-        der Anfrage verarbeitet und über den eingesetzten Formulardienst übermittelt.
-        Ergänzen Sie hier vor dem öffentlichen Launch insbesondere Rechtsgrundlage,
-        Empfänger, Speicherdauer, Drittlandtransfer und Betroffenenrechte.
-      </p>
-
-      <h3>Hosting</h3>
-      <p>
-        Ergänzen Sie die erforderlichen Informationen zum Hosting über Cloudflare Pages
-        sowie zur Verarbeitung von Server-Protokolldaten.
-      </p>
-    </div>
-  </dialog>
-
   <script src="script.js" defer></script>
-  <a href="datenschutz.html">Datenschutz</a>
-  <a href="impressum.html">Impressum</a>
 </body>
 </html>
