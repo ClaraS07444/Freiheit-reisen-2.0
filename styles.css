@@ -19,7 +19,7 @@
   --color-focus: rgba(7, 151, 173, 0.24);
 
   --font-heading: Georgia, "Times New Roman", serif;
-  --font-body: "Inter", Aptos, Arial, sans-serif;
+  --font-body: Inter, Aptos, Arial, sans-serif;
 
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -464,6 +464,7 @@ button {
 }
 
 .card {
+  min-width: 0;
   overflow: hidden;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
@@ -472,20 +473,35 @@ button {
 }
 
 .card__media {
+  display: flex;
+  width: 100%;
   overflow: hidden;
+  align-items: center;
+  justify-content: center;
   aspect-ratio: 16 / 10;
   background: var(--color-bg-soft);
 }
 
 .card__media--portrait {
   aspect-ratio: 4 / 5;
+  background: #ffffff;
 }
 
 .card__media img {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-position: center;
   transition: transform 200ms ease-out;
+}
+
+.vehicle-card .card__media img {
+  object-fit: cover;
+}
+
+.inspiration-card .card__media img {
+  object-fit: contain;
+  background: #ffffff;
 }
 
 .card__body {
@@ -514,9 +530,12 @@ button {
   box-shadow: var(--shadow-lg);
 }
 
-.vehicle-card:hover .card__media img,
-.inspiration-card:hover .card__media img {
+.vehicle-card:hover .card__media img {
   transform: scale(1.02);
+}
+
+.inspiration-card:hover .card__media img {
+  transform: scale(1.01);
 }
 
 .badge {
@@ -548,18 +567,29 @@ button {
 }
 
 .featured-trip__media {
-  min-height: 18rem;
-  background: var(--color-bg-soft);
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  background: #ffffff;
 }
 
 .featured-trip__media img {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  background: #ffffff;
 }
 
 .featured-trip__content {
   display: flex;
+  min-width: 0;
   flex-direction: column;
   justify-content: center;
   padding: var(--space-6);
@@ -658,6 +688,7 @@ button {
 
 .form-field {
   display: flex;
+  min-width: 0;
   flex-direction: column;
   gap: var(--space-2);
 }
@@ -679,6 +710,7 @@ button {
 .form-field input,
 .form-field textarea {
   width: 100%;
+  min-width: 0;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   background: #ffffff;
@@ -740,9 +772,11 @@ button {
 .footer-link {
   display: inline;
   margin: 0;
+  border: 0;
   background: transparent;
   color: inherit;
   padding: 0;
+  font: inherit;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -799,6 +833,7 @@ button {
 }
 
 .about-layout__content {
+  min-width: 0;
   max-width: var(--text-max);
 }
 
@@ -817,13 +852,17 @@ button {
 .about-layout__media {
   overflow: hidden;
   border-radius: var(--radius-xl);
+  background: var(--color-bg-soft);
   box-shadow: var(--shadow-md);
 }
 
 .about-layout__media img {
+  display: block;
   width: 100%;
+  height: auto;
   min-height: 20rem;
   object-fit: cover;
+  object-position: center;
 }
 
 .value-grid {
@@ -833,6 +872,7 @@ button {
 }
 
 .value-card {
+  min-width: 0;
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   background: #ffffff;
@@ -1105,14 +1145,13 @@ button {
 }
 
 .js [data-reveal] {
-  opacity: 0;
-  transform: translateY(0.75rem);
-  transition: opacity 420ms ease-out, transform 420ms ease-out;
+  opacity: 1;
+  transform: none;
 }
 
 .js [data-reveal].is-revealed {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 @media (min-width: 40rem) {
@@ -1207,11 +1246,13 @@ button {
   }
 
   .featured-trip {
-    grid-template-columns: minmax(18rem, 0.9fr) minmax(22rem, 1.1fr);
+    grid-template-columns: minmax(18rem, 0.95fr) minmax(22rem, 1.05fr);
+    align-items: center;
   }
 
   .featured-trip__media {
-    min-height: 100%;
+    min-height: 0;
+    aspect-ratio: 1 / 1;
   }
 
   .featured-trip__content {
@@ -1274,8 +1315,16 @@ button {
     width: 100%;
   }
 
+  .featured-trip__media {
+    aspect-ratio: 1 / 1;
+  }
+
   .featured-trip__content {
     padding: var(--space-5);
+  }
+
+  .card__media--portrait {
+    aspect-ratio: 4 / 5;
   }
 
   .site-footer__bottom {
