@@ -889,7 +889,13 @@ button {
 }
 
 .value-card h3 {
+  max-width: 100%;
   margin-top: var(--space-2);
+  font-size: clamp(1.05rem, 1.75vw, 1.42rem);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
 }
 
 .value-card p {
@@ -1290,6 +1296,15 @@ button {
   .card-grid--four,
   .value-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .value-grid {
+    gap: clamp(0.75rem, 1.5vw, 1.25rem);
+  }
+
+  .value-card {
+    height: 100%;
+    padding: clamp(1.1rem, 1.8vw, 1.5rem);
   }
 }
 
