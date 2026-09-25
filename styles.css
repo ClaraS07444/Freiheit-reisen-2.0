@@ -574,14 +574,14 @@ button {
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  aspect-ratio: 1 / 1;
   background: #ffffff;
 }
 
 .featured-trip__media img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-width: 100%;
   object-fit: contain;
   object-position: center;
   background: #ffffff;
@@ -1246,13 +1246,22 @@ button {
   }
 
   .featured-trip {
-    grid-template-columns: minmax(18rem, 0.95fr) minmax(22rem, 1.05fr);
-    align-items: center;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: stretch;
+    max-width: 46rem;
   }
 
   .featured-trip__media {
+    width: 100%;
     min-height: 0;
-    aspect-ratio: 1 / 1;
+    aspect-ratio: auto;
+    padding: 0;
+  }
+
+  .featured-trip__media img {
+    width: 100%;
+    height: auto;
+    max-width: none;
   }
 
   .featured-trip__content {
