@@ -1,5 +1,5 @@
 "use strict";
-alert("Script läuft");
+
 document.documentElement.classList.add("js");
 
 // Hero Animation
