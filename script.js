@@ -6,7 +6,7 @@ document.documentElement.classList.add("js");
 gsap.from(".fade-up", {
   y: 50,
   opacity: 0,
-  duration: 1.2
+  duration: 3.2
   });
 
 const selectors = {
