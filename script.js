@@ -3,7 +3,7 @@
 document.documentElement.classList.add("js");
 
 // Hero Animation
-gsap.from("fade-up", {
+gsap.from(".fade-up", {
   y: 50,
   opacity: 0,
   duration: 1.2
