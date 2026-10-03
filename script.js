@@ -2,6 +2,13 @@
 
 document.documentElement.classList.add("js");
 
+// Hero Animation
+gsap.from("fade-up", {
+  y: 50,
+  opacity: 0,
+  duration: 1.2
+  });
+
 const selectors = {
   navigation: "[data-site-nav]",
   navToggle: "[data-nav-toggle]",
