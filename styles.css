@@ -312,8 +312,12 @@ button {
   color: var(--color-secondary-800);
 }
 
+.section--busses {
+  padding-top: 2rem;
+  }
+
 .section {
-  padding-block: var(--space-2);
+  padding-block: var(--space-8);
 }
 
 .section--soft {
