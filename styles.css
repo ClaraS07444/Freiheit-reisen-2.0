@@ -313,7 +313,7 @@ button {
 }
 
 .section {
-  padding-block: var(--space-8);
+  padding-block: var(--space-2);
 }
 
 .section--soft {
