@@ -6,10 +6,10 @@ document.documentElement.classList.add("js");
 gsap.from(".fade-up", {
   y: 50,
   opacity: 0,
-  duration: 3.2
+  duration: 3.2,
   scrollTrigger: {
-    trigger:".fade-up"
-    start:"top 80%"
+    trigger: ".fade-up",
+    start: "top 80%"
   }
   });
 
