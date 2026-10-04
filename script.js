@@ -9,7 +9,7 @@ gsap.from(".fade-up", {
   duration: 3.2,
   scrollTrigger: {
     trigger: ".fade-up",
-    start: "top 50%"
+    start: "top 60%"
   }
   });
 
